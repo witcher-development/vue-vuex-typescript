@@ -1,21 +1,22 @@
 interface EditorState {
-  settings: Settings;
-  texts: Text[];
+	settings: Settings;
+	texts: Text[];
 }
 
 interface Settings {
-  defaultColor: string;
-  defaultStyle: string;
+	defaultColor: number[];
+	defaultStyle: string;
 }
 
 interface Text {
-  text: string;
-  color: string;
-  style: string;
+	text: string;
+	color: string;
+	style: string;
+	edit?: boolean;
 }
 
 export {
-  EditorState,
-  Settings,
-  Text,
+	EditorState,
+	Settings,
+	Text,
 };
